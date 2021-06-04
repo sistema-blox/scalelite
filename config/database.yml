@@ -17,4 +17,5 @@ test:
 
 production:
   <<: *default
-  database: scalelite
+  url: <%= ENV['DATABASE_URL'] %>
+  #database: scalelite
