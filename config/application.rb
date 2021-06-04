@@ -115,5 +115,6 @@ module Scalelite
           methods: [:get, :patch, :put, :delete, :post, :options]
           )
       end
+    end
   end
 end
