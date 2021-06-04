@@ -26,7 +26,7 @@ gem 'pg', '~> 1.2'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
 
 # Generates a terminal table
 gem 'tabulo', '~> 2.3.0'
