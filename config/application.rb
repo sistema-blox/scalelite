@@ -106,7 +106,7 @@ module Scalelite
     # Recordings imported will be unpublished by default, if set to 'true'. Defaults to false.
     config.x.recording_import_unpublished = ENV.fetch('RECORDING_IMPORT_UNPUBLISHED', 'false').casecmp?('true')
 
-    config.middleware.insert_before 0, "Rack::Cors" do
+    config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
         resource(
